@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build OpenJ9",
+            "command": "build",
+            "type": "cmake",
+        },
+        {
+            "label": "Build OpenJDK",
+            "command": "make all \"EXTRA_CMAKE_ARGS=-DOMR_SEPARATE_DEBUG_INFO=OFF\"",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+    ]
+}

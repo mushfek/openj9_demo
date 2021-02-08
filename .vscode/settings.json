@@ -1,0 +1,17 @@
+{
+    "cmake.buildDirectory": "${workspaceFolder}/build/linux-x86_64-normal-server-release/vm",
+    "cmake.sourceDirectory": "${workspaceFolder}/openj9",
+    "cmake.configureSettings": {
+        "BOOT_JDK": "/usr/lib/jvm/adoptojdk-java-80",
+        "JAVA_SPEC_VERSION": "8",
+        "OPENJ9_BUILD": "ON",
+        "OMR_SEPARATE_DEBUG_INFO": "OFF",
+        "J9VM_OMR_DIR": "${workspaceFolder}/omr"
+    },
+    "cmake.cacheInit": "runtime/cmake/caches/linux_x86-64_cmprssptrs.cmake",
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+        "**/build": true
+    },
+    "cmake.buildTask": true
+}
